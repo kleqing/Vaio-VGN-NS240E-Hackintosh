@@ -89,24 +89,24 @@
 ## Kext
 This is my kext for my system. You can download & install it but i'm not sure about the compatible. Also, i will explain these kext too.
 
-###Audio
+### Audio
 * Install VoodooHDA.kext
 * After install it will inject all port (Speaker, Headphone)
 * VoodooHDA_Loader will auto install after you install this kext and reboot. It VoodooHDA_Loader doesn't show on 'System Configurator', you can install it from HackintoshVietNamTool by click this: Kext/Sound/VoodooHDA and install.
 * Using CodecCommander.kext if you want to fix sound when sleep/wake.
 
-###Wifi & Bluetooth
+### Wifi & Bluetooth
 * ⚠ Caution: Intel AGN 5100 is not supported.
 * My wifi is working well but bluetooth is not (Atheros 9285). But some time is doesn't work well. So install IOath3kfrmwr.kext and AtherosWiFiInjector.kext to have native Wifi & Bluetoothh. Also you have to use FakePCIID_AR9280_as_AR946x.kext and FakePCIID.kext to have AirPort too.
 
-###Enthernet
+### Enthernet
 * There is no kext for this so you have to change to Wireless.
 
-###CPU
+### CPU
 * Using FakeSMC.kext and FakeSMC_CPUSensors.kext to make CPU working. Also using NullCPUPowerManagement.kext to prevent Kernel Panic.
 * To reduce battery drain, using DisableTurboBoostBattery.kext to make Hackintosh automatically adjust CPU clock.
 
-###GPU
+### GPU
 * Unfortunately, Apple doesn't use Intel GM45 Chipset on their Mac. But luckily, insanelymac community had do it by using GMAX3100 kext to fake their GPU.
  * Here is list of MacOS X supported:
    * MacOS X Tiger & Snow Leopard: Native resolution + QE/CI.
@@ -114,39 +114,39 @@ This is my kext for my system. You can download & install it but i'm not sure ab
    * MacOS X Mavericks: Custom resolution on Chameleon Bootloader. QE work but it have a little big of lag.
    * MacOS X Yosemite: Apple had fixed. That mean when you custom resolution, QE will not worked.
 
-###Sleep, Wake and Hibernation
+### Sleep, Wake and Hibernation
 * Sleep and Wake doesn't work. I don't know why but when i run this laptop into slepp mode, it will show a black picture and cursor.
 * Hibernation will not work on any Hackintosh computer so you shouldn't hope fix this.
 
-###iMessage/Facetime and App Store
+### iMessage/Facetime and App Store
 * AppStore will work if you have an internet connection.
 * For Facetime & iMessage, i will have a guide later.
   ![Screenshot](Screenshots/FT&iM.png)
 
-###USB Port
+### USB Port
 * USB 2.0 is supported by using GenericUSBXHCI.kext.
 
-###Battery
+### Battery
 * Using ACPIBatteryManager.kext to have native battery percent.
 
-###Hard Disk
+### Hard Disk
 * AHCI_3rdParty_SATA.kext will make your Hackintosh inject all HDD/SSD drive.
 
-###TouchPad
+### TouchPad
 * VoodooPS2Controller.kext will inject and active touchpad.
 
-###Other
+### Other
 * <a href="">Lilu</a>,<a href="">Shiki</a> are these kext which will active Quick Time Player.
 * HibernationFixup.kext fix hibernation on your Hackintosh. (Required newest Lilu kext)
 
-##Tool & Tweak
+## Tool & Tweak
 * I also install some kext to make my Hackintosh better
   ** Tick like this on Hackintosh Vietnam Tool
       ![Screenshot](Screenshots/HVT.png)
   ** Tick like this on Multibeast (HDD user please caution)
       ![Screenshot](Screenshots/Multibeast.png)
 
-##DSDT & SSDT
+## DSDT & SSDT
 * Because iGPU doesn't support. So, i will not patch DSDT and SSDT.
 
 
