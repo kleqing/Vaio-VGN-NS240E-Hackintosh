@@ -65,6 +65,7 @@
 | SD Card | ❌ Not working |
 | DRM | ❌ Not working |
 | Bootcamp | ❌ Not Working |
+| Wifi On/Off | ❌ Not Working |
 
 ## 💾 Installation
 
@@ -92,7 +93,7 @@ This is my kext for my system. You can download & install it but i'm not sure ab
 ### Audio
 * Install VoodooHDA.kext
 * After install it will inject all port (Speaker, Headphone)
-* VoodooHDA_Loader will auto install after you install this kext and reboot. It VoodooHDA_Loader doesn't show on 'System Configurator', you can install it from HackintoshVietNamTool by click this: Kext/Sound/VoodooHDA and install.
+* VoodooHDA_Loader will auto install after you install this kext and reboot. If VoodooHDA_Loader doesn't show on 'System Configurator', you can install it from HackintoshVietNamTool by click this: Kext/Sound/VoodooHDA and install.
 * Using CodecCommander.kext if you want to fix sound when sleep/wake.
 
 ### Wifi & Bluetooth
@@ -115,12 +116,13 @@ This is my kext for my system. You can download & install it but i'm not sure ab
    * MacOS X Yosemite: Apple had fixed. That mean when you custom resolution, QE will not worked.
 
 ### Sleep, Wake and Hibernation
-* Sleep and Wake doesn't work. I don't know why but when i run this laptop into slepp mode, it will show a black picture and cursor.
+* Sleep and Wake doesn't work. I don't know why but when i run this laptop into sleep mode, it will show a black picture and cursor.
 * Hibernation will not work on any Hackintosh computer so you shouldn't hope fix this.
 
 ### iMessage/Facetime and App Store
 * AppStore will work if you have an internet connection.
 * For Facetime & iMessage, i will have a guide later.
+
   ![Screenshot](Screenshots/FT&iM.png)
 
 ### USB Port
@@ -141,12 +143,23 @@ This is my kext for my system. You can download & install it but i'm not sure ab
 
 ## Tool & Tweak
 * I also install some kext to make my Hackintosh better
-  ** Tick like this on Hackintosh Vietnam Tool
+  * Tick like this on Hackintosh Vietnam Tool
+
       ![Screenshot](Screenshots/HVT.png)
-  ** Tick like this on Multibeast (HDD user please caution)
+
+  * Tick like this on Multibeast (HDD user please caution)
+
       ![Screenshot](Screenshots/Multibeast.png)
 
 ## DSDT & SSDT
 * Because iGPU doesn't support. So, i will not patch DSDT and SSDT.
 
+## SMBios
+* Use MacbookPro7,1 smbios by custom on Chameleon Wizard.
 
+## Credits
+* Apple for MacOS X
+* All Hackintosh community
+
+## Follow me
+* <a href="https://www.facebook.com/anpk.duyanh/">Facebook</a>
