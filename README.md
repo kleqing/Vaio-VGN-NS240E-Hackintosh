@@ -1,7 +1,6 @@
 # Sony Vaio VGN-NS240E Hackintosh
 
-## Preview
-* ![Screenshot](Screenshots/Desktop.png)
+![Screenshot](Screenshots/Desktop.png)
 
 ## ⚠ MacOS X Supported
 - Mac OS X: 
@@ -147,7 +146,7 @@ This is my kext for my system. You can download & install from this github page 
 * VoodooPS2Controller.kext will inject and active touchpad.
 
 ### Other
-* <a href="">Lilu</a>,<a href="">Shiki</a> are these kext which will active Quick Time Player.
+* <a href="https://github.com/acidanthera/lilu/releases">Lilu</a>, <a href="https://github.com/acidanthera/Shiki/releases">Shiki</a> are these kext which will active Quick Time Player.
 * HibernationFixup.kext fix hibernation on your Hackintosh. (Required newest Lilu kext)
 
 ## Tool & Tweak
@@ -206,17 +205,17 @@ This is my kext for my system. You can download & install from this github page 
 
 ## QuickLook about this mac
 
-	![Screenshot](Screenshots/QuickLook1.png)
+![Screenshot](Screenshots/QuickLook2.png)
+  
+![Screenshot](Screenshots/QuickLook2.png)
 
-  ![Screenshot](Screenshots/QuickLook2.png)
+![Screenshot](Screenshots/QuickLook3.png)
 
-  ![Screenshot](Screenshots/QuickLook3.png)
+![Screenshot](Screenshots/QuickLook4.png)
 
-  ![Screenshot](Screenshots/QuickLook4.png)
+![Screenshot](Screenshots/QuickLook5.png)
 
-  ![Screenshot](Screenshots/QuickLook5.png)
-
-  ![Screenshot](Screenshots/QuickLook6.png)
+![Screenshot](Screenshots/QuickLook6.png)
 
 ## Follow me
 * <a href="https://www.facebook.com/anpk.duyanh/">Facebook</a>
