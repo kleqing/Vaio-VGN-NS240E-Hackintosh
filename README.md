@@ -40,7 +40,7 @@
   * Bluetooth: Yes
   * Bios: R1040Y3 (Please update Bios from original WindowsOS)
 
-## ℹ️ Current Status
+## ☑️ Current Status
 
 | Feature | Status |
 | ------------- | ------------- |
@@ -76,10 +76,16 @@
 * R-Drive Image to create USB boot.
   * After the create USB done, go to your Bios
 
-## Bios Config 
-* Press F2 when computer restart
+### Bios Config 
+* Press F2 when computer restart to go to Bios
+* Config like this
+
+* Tab Advanced:
+  * Intel(R) Virtualization: Disable
+
 * Tab Boot:
-  *
+  * External Device Boot: Enable
+  * Select 1st Boot Priority: External Device
 
 ## Installation (For newbie)
 * If it notify you about bluetooth connection, just press 'SpaceBar'.
@@ -87,8 +93,10 @@
 * Go to Utilities -> Disk Utility and format it in 'Mac OS Extended (Journaled)'.
 * Close it and install MacOS X to your formatted disk.
 
-## Kext
+## 🔓 Kext
 This is my kext for my system. You can download & install from this github page but i'm not sure about the compatible on your computer. I will show all infomation about this kext with my computer and also i will explain these kext too.
+
+* ⚠ Caution: On folder kext there was a folder name 'App' which already have 'Kext Utility'. Extract it and using it to install kext.
 
 ### Audio
 * Install VoodooHDA.kext
@@ -97,7 +105,7 @@ This is my kext for my system. You can download & install from this github page 
 * Using CodecCommander.kext if you want to fix sound when sleep/wake.
 
 ### Wifi & Bluetooth
-* ⚠ Caution: Intel AGN 5100 is not supported.
+* ⚠ Attention: Intel AGN 5100 is not supported.
 * My wifi is working well but bluetooth is not (Atheros 9285). But some time is doesn't work well. So install IOath3kfrmwr.kext and AtherosWiFiInjector.kext to have native Wifi & Bluetoothh. Also you have to use FakePCIID_AR9280_as_AR946x.kext and FakePCIID.kext to have AirPort too.
 
 ### Enthernet
@@ -171,6 +179,8 @@ This is my kext for my system. You can download & install from this github page 
 
   ![Screenshot](Screenshots/Bootloader7.png)
 
+* ⚠ Attention: Please choose resolution if your GPU doesn't support by Apple
+
 ## Chameleon Wizard
 * You can choose like me or you can custom it for yourself. Here is my Chameleon.Boot.plist
 
@@ -187,6 +197,25 @@ This is my kext for my system. You can download & install from this github page 
 ## Credits
 * Apple for MacOS X
 * All Hackintosh community
+
+## ⚠ Caution
+* All kext for this computer i've uploaded at <a href="https://github.com/red-toxic/Sony-Vaio-VGN-NS240E-Hackintosh/tree/main/Kext">here</a>. Just download it if you want.
+
+* All of these package (Hackintosh Vietnam Tool, Chameleon Bootloader,...) can be find on google, but i've added at <a href="https://github.com/red-toxic/Sony-Vaio-VGN-NS240E-Hackintosh/tree/main/Package">here</a>.
+
+## QuickLook about this mac
+
+	![Screenshot](Screenshots/QuickLook1.png)
+
+  ![Screenshot](Screenshots/QuickLook2.png)
+
+  ![Screenshot](Screenshots/QuickLook3.png)
+
+  ![Screenshot](Screenshots/QuickLook4.png)
+
+  ![Screenshot](Screenshots/QuickLook5.png)
+
+  ![Screenshot](Screenshots/QuickLook6.png)
 
 ## Follow me
 * <a href="https://www.facebook.com/anpk.duyanh/">Facebook</a>
