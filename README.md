@@ -71,21 +71,20 @@
 
 ### Prepare
 * Downloads image file: <a href="">here</a> (I will update this link).
-* A USB 8GB or more... 
+* A USB 8GB or more.
 * A partition (or a new HDD/SSD) which had formatted in NTFS.
-* R-Drive Image to create USB boot.
-  * After the create USB done, go to your Bios
+* <a href="https://www.drive-image.com/">R-Drive Image</a> to create USB boot.
 
 ### Bios Config 
 * Press F2 when computer restart to go to Bios
 * Config like this
 
-* Tab Advanced:
-  * Intel(R) Virtualization: Disable
+  * Tab Advanced:
+    * Intel(R) Virtualization Technology: Disable
 
-* Tab Boot:
-  * External Device Boot: Enable
-  * Select 1st Boot Priority: External Device
+  * Tab Boot:
+    * External Device Boot: Enable
+    * Select 1st Boot Priority: External Device
 
 ## Installation (For newbie)
 * If it notify you about bluetooth connection, just press 'SpaceBar'.
@@ -205,7 +204,7 @@ This is my kext for my system. You can download & install from this github page 
 
 ## QuickLook about this mac
 
-![Screenshot](Screenshots/QuickLook2.png)
+![Screenshot](Screenshots/QuickLook1.png)
   
 ![Screenshot](Screenshots/QuickLook2.png)
 
