@@ -1,6 +1,6 @@
 # Sony Vaio VGN-NS240E Hackintosh
 
-![Screenshot](Screenshots/desktop.png)
+![Screenshot](Screenshots/screenshot.png)
 
 ## ⚠ MacOS X Supported
 - Mac OS X: 
@@ -56,7 +56,7 @@
 | Webcam | ✅ Working (It will have a little bit of lag when open an camera app) |
 | Wifi & Bluetooth | ✅ Working |
 | Airdrop & Handoff | ✅ Working (Handoff working on 10.10 or later) |
-| FileVault 2 | ✅ Working |
+| FileVault | ✅ Working |
 | iMessage, Facetime & AppStore | ✅ Working |
 | VGA Port | ❌ Not Working |
 | Sleep & Wake | ❌ Not Working |
@@ -88,7 +88,7 @@
 * Close it and install MacOS X to your formatted disk.
 
 ## Kext
-This is my kext for my system. You can download & install it but i'm not sure about the compatible. Also, i will explain these kext too.
+This is my kext for my system. You can download & install from this github page but i'm not sure about the compatible on your computer. I will show all infomation about this kext with my computer and also i will explain these kext too.
 
 ### Audio
 * Install VoodooHDA.kext
@@ -142,7 +142,7 @@ This is my kext for my system. You can download & install it but i'm not sure ab
 * HibernationFixup.kext fix hibernation on your Hackintosh. (Required newest Lilu kext)
 
 ## Tool & Tweak
-* I also install some kext to make my Hackintosh better
+* I also install some kext from 3rd app to make my Hackintosh running better
   * Tick like this on Hackintosh Vietnam Tool
 
       ![Screenshot](Screenshots/HVT.png)
@@ -152,10 +152,37 @@ This is my kext for my system. You can download & install it but i'm not sure ab
       ![Screenshot](Screenshots/Multibeast.png)
 
 ## DSDT & SSDT
-* Because iGPU doesn't support. So, i will not patch DSDT and SSDT.
+* Because iGPU doesn't support and everything is working perfectly. So, i will not patch DSDT and SSDT.
+
+## Chameleon Bootloader
+* Just install like this:
+  
+  ![Screenshot](Screenshots/Bootloader1.png)
+
+  ![Screenshot](Screenshots/Bootloader2.png)
+
+  ![Screenshot](Screenshots/Bootloader3.png)
+
+  ![Screenshot](Screenshots/Bootloader4.png)
+
+  ![Screenshot](Screenshots/Bootloader5.png)
+
+  ![Screenshot](Screenshots/Bootloader6.png)
+
+  ![Screenshot](Screenshots/Bootloader7.png)
+
+## Chameleon Wizard
+* You can choose like me or you can custom it for yourself. Here is my Chameleon.Boot.plist
+
+  ![Screenshot](Screenshots/ChameleonWizard.png)
 
 ## SMBios
-* Use MacbookPro7,1 smbios by custom on Chameleon Wizard.
+* Custom to MacbookPro7,1 smbios by using Chameleon Wizard.
+
+  ![Screenshot](Screenshots/SMBios.png)
+
+## Issues
+* There wasn't any issues with my Hackintosh computer right now.
 
 ## Credits
 * Apple for MacOS X
