@@ -1,8 +1,7 @@
 # Sony Vaio VGN-NS240E Hackintosh
 
 ## Preview
-
-![Screenshot](Screenshots/Desktop.png)
+* ![Screenshot](Screenshots/Desktop.png)
 
 ## ⚠ MacOS X Supported
 - Mac OS X: 
