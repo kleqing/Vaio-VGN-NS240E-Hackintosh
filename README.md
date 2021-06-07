@@ -69,15 +69,8 @@
 
 ## 💾 Installation
 
-### Prepare
-* Downloads image file: <a href="">here</a> (I will update this link).
-* A USB 8GB or more.
-* A partition (or a new HDD/SSD) which had formatted in NTFS.
-* <a href="https://www.drive-image.com/">R-Drive Image</a> to create USB boot.
-
 ### Bios Config 
-* Press F2 when computer restart to go to Bios
-* Config like this
+* Config:
 
   * Tab Advanced:
     * Intel(R) Virtualization Technology: Disable
@@ -86,16 +79,10 @@
     * External Device Boot: Enable
     * Select 1st Boot Priority: External Device
 
-## Installation (For newbie)
-* If it notify you about bluetooth connection, just press 'SpaceBar'.
-* Press Continue until you see the list of disk to install.
-* Go to Utilities -> Disk Utility and format it in 'Mac OS Extended (Journaled)'.
-* Close it and install MacOS X to your formatted disk.
-
 ## 🔓 Kext
 This is my kext for my system. You can download & install from this github page but i'm not sure about the compatible on your computer. I will show all infomation about this kext with my computer and also i will explain these kext too.
 
-* ⚠ Caution: On folder kext there was a folder name 'App' which already have 'Kext Utility'. Extract it and using it to install kext.
+  * ⚠ Caution: On folder kext there was a folder name 'App' which already have 'Kext Utility'. Extract it and using it to install kext.
 
 ### Audio
 * Install VoodooHDA.kext
@@ -202,7 +189,7 @@ This is my kext for my system. You can download & install from this github page 
 
 * All of these package (Hackintosh Vietnam Tool, Chameleon Bootloader,...) can be find on google, but i've added at <a href="https://github.com/red-toxic/Sony-Vaio-VGN-NS240E-Hackintosh/tree/main/Package">here</a>.
 
-## QuickLook about this mac
+## QuickLook
 
 ![Screenshot](Screenshots/QuickLook1.png)
   
