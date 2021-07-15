@@ -115,7 +115,7 @@ This is my kext for my system. You can download & install from this github page 
 
 ### iMessage/Facetime and App Store
 * AppStore will work if you have an internet connection.
-* For Facetime & iMessage, i will have a guide later.
+* For Facetime & iMessage, follow this <a href="https://github.com/red-toxic/iMessage-Fix/">guide</a>.
 
   ![Screenshot](Screenshots/FT&iM.png)
 
@@ -132,7 +132,7 @@ This is my kext for my system. You can download & install from this github page 
 * VoodooPS2Controller.kext will inject and active touchpad.
 
 ### Other
-* <a href="https://github.com/acidanthera/lilu/releases">Lilu</a>, <a href="https://github.com/acidanthera/Shiki/releases">Shiki</a> are these kext which will active Quick Time Player.
+* <a href="https://github.com/acidanthera/lilu/releases">Lilu,</a> <a href="https://github.com/acidanthera/Shiki/releases">Shiki</a> are these kext which will active Quick Time Player.
 * HibernationFixup.kext fix hibernation on your Hackintosh. (Required newest Lilu kext)
 
 ## Tool & Tweak
