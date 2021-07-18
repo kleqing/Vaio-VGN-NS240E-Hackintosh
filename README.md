@@ -54,7 +54,6 @@
 | Brightness | ❌ Not Working |
 | Hibernation | ❌ Not Working |
 | SD Card | ❌ Not working |
-
 | Boot Camp Assistant | ❌ Not Working |
 | Wifi toggle switch | ❌ Not Working |
 
