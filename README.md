@@ -11,34 +11,24 @@
   - Yosemite ✅ (No QE/CI)
 - Bootloader: Chameleon Bootloader
 
-## ℹ️ System Infomation
-* Original
-  * CPU: Intel(R) Core(TM) 2 Duo CPU T6400 2.00GHz
+## ℹ️ System infomation
+
+  * CPU: Intel(R) Core(TM) 2 Duo CPU T9400 2.54GHz
   * GPU: Mobile Intel(R) 4 Series Express Chipset Family (Intel GM45)
-  * Ram: 3GB DDR2 800MHz
-  * Hard Disk: SamSung HDD 5400RPM SATA
+  * Ram: 4GB DDR2 800MHz
+  * Hard Disk: Netac SSD 256GB SATA
+  *	Second Hard Disk Drive: Segate HDD 500GB
   * Display: Widescreen TFT-LCD with XBRITE-ECO Technology 15.4 inch (1280x800)
-  * Sound: Realtek 262
-  * Wireless: Intel AGN 5100
+  * Sound: Realtek 262 (ALC262)
+  * Wireless: Atheros 9285 802.11b/g/n
   * Enthernet: Marvell Yukon 88E8055
-  * Optical Drive: SuperMulti DVD Burner
-  * Second Hard Disk Drive: None
+  * Optical Drive: None
   * Webcam: Yes
   * Headphone & Speaker: Yes
   * Built-in Microphone: Yes
-  * Bluetooth: None
-  * Battery: Lithium-ion
-  * Bios: R1020Y3
-
-* Now (I will show the change only)
-  * CPU: Intel(R) Core(TM) 2 Duo CPU T94900 2.54GHz
-  * Ram: 4GB DDR2 797MHz
-  * Hard Disk: Netac SSD 256GB SATA
-  * Wireless: Atheros 9285
-  * Optical Drive: None
-  * Second Hard Disk Drive: Segate HDD 500GB (Thank for Second HDD Caddy Bay)
   * Bluetooth: Yes
-  * Bios: R1040Y3 (Please update Bios from original WindowsOS)
+  * Battery: Lithium-ion
+  * Bios: R1040Y3 (Bios can be update from original WindowsOS)
 
 ## ☑️ Current Status
 
@@ -51,6 +41,7 @@
 | Audio | ✅ Working |
 | Battery | ✅ Working |
 | TouchPad | ✅ Working |
+| DRM | ✅ working |
 | Build-in Microphone | ✅ Working |
 | Headphone & Speaker | ✅ Working |
 | Webcam | ✅ Working (It will have a little bit of lag when open an camera app) |
@@ -63,13 +54,11 @@
 | Brightness | ❌ Not Working |
 | Hibernation | ❌ Not Working |
 | SD Card | ❌ Not working |
-| DRM | ❌ Not working |
-| Bootcamp | ❌ Not Working |
-| Wifi On/Off | ❌ Not Working |
 
-## 💾 Installation
+| Boot Camp Assistant | ❌ Not Working |
+| Wifi toggle switch | ❌ Not Working |
 
-### Bios Config 
+## 💾 Bios Config 
 * Config:
 
   * Tab Advanced:
@@ -79,27 +68,7 @@
     * External Device Boot: Enable
     * Select 1st Boot Priority: External Device
 
-## 🔓 Kext
-This is my kext for my system. You can download & install from this github page but i'm not sure about the compatible on your computer. I will show all infomation about this kext with my computer and also i will explain these kext too.
-
-  * ⚠ Caution: On folder kext there was a folder name 'App' which already have 'Kext Utility'. Extract it and using it to install kext.
-
-### Audio
-* Install VoodooHDA.kext
-* After install it will inject all port (Speaker, Headphone)
-* VoodooHDA_Loader will auto install after you install this kext and reboot. If VoodooHDA_Loader doesn't show on 'System Configurator', you can install it from HackintoshVietNamTool by click this: Kext/Sound/VoodooHDA and install.
-* Using CodecCommander.kext if you want to fix sound when sleep/wake.
-
-### Wifi & Bluetooth
-* ⚠ Attention: Intel AGN 5100 is not supported.
-* My wifi is working well but bluetooth is not (Atheros 9285). But some time is doesn't work well. So install IOath3kfrmwr.kext and AtherosWiFiInjector.kext to have native Wifi & Bluetoothh. Also you have to use FakePCIID_AR9280_as_AR946x.kext and FakePCIID.kext to have AirPort too.
-
-### Enthernet
-* There is no kext for this so you have to change to Wireless.
-
-### CPU
-* Using FakeSMC.kext and FakeSMC_CPUSensors.kext to make CPU working. Also using NullCPUPowerManagement.kext to prevent Kernel Panic.
-* To reduce battery drain, using DisableTurboBoostBattery.kext to make Hackintosh automatically adjust CPU clock.
+## ✖️ Attention
 
 ### GPU
 * Unfortunately, Apple doesn't use Intel GM45 Chipset on their Mac. But luckily, insanelymac community had do it by using GMAX3100 kext to fake their GPU.
@@ -119,23 +88,9 @@ This is my kext for my system. You can download & install from this github page 
 
   ![Screenshot](Screenshots/FT&iM.png)
 
-### USB Port
-* USB 2.0 is supported by using GenericUSBXHCI.kext.
+## ☁️ Config (Experimental)
 
-### Battery
-* Using ACPIBatteryManager.kext to have native battery percent.
-
-### Hard Disk
-* AHCI_3rdParty_SATA.kext will make your Hackintosh inject all HDD/SSD drive.
-
-### TouchPad
-* VoodooPS2Controller.kext will inject and active touchpad.
-
-### Other
-* <a href="https://github.com/acidanthera/lilu/releases">Lilu,</a> <a href="https://github.com/acidanthera/Shiki/releases">Shiki</a> are these kext which will active Quick Time Player.
-* HibernationFixup.kext fix hibernation on your Hackintosh. (Required newest Lilu kext)
-
-## Tool & Tweak
+### Tool & Tweak
 * I also install some kext from 3rd app to make my Hackintosh running better
   * Tick like this on Hackintosh Vietnam Tool
 
@@ -145,11 +100,8 @@ This is my kext for my system. You can download & install from this github page 
 
       ![Screenshot](Screenshots/Multibeast.png)
 
-## DSDT & SSDT
-* Because iGPU doesn't support and everything is working perfectly. So, i will not patch DSDT and SSDT.
-
-## Chameleon Bootloader
-* Just install like this:
+### Chameleon Bootloader
+* I think that it's stability when i config like this. For your laptop/PC, please be careful.
   
   ![Screenshot](Screenshots/Bootloader1.png)
 
@@ -165,24 +117,26 @@ This is my kext for my system. You can download & install from this github page 
 
   ![Screenshot](Screenshots/Bootloader7.png)
 
-* ⚠ Attention: Please choose resolution if your GPU doesn't support by Apple
 
-## Chameleon Wizard
+### Chameleon Wizard
 * You can choose like me or you can custom it for yourself. Here is my Chameleon.Boot.plist
 
   ![Screenshot](Screenshots/ChameleonWizard.png)
 
-## SMBios
+### SMBios
 * Custom to MacbookPro7,1 smbios by using Chameleon Wizard.
 
   ![Screenshot](Screenshots/SMBios.png)
 
-## Issues
+## ❓ Issues
 * There wasn't any issues with my Hackintosh computer right now.
+* SSDT/DSDT aren't using on my hackintosh because my hackintosh working stable and don't cause any issue when i using.
 
 ## Credits
 * Apple for MacOS X
-* All Hackintosh community
+* All Hackintosh community for kext
+* Chameleon.osx86.hu for bootloader
+* And more...
 
 ## ⚠ Caution
 * All kext for this computer i've uploaded at <a href="https://github.com/red-toxic/Sony-Vaio-VGN-NS240E-Hackintosh/tree/main/Kext">here</a>. Just download it if you want.
@@ -205,3 +159,4 @@ This is my kext for my system. You can download & install from this github page 
 
 ## Follow me
 * <a href="https://www.facebook.com/anpk.duyanh/">Facebook</a>
+* <a href="https://www.twitter.com/3xtend3r">Twitter</a>
